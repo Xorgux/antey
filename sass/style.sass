@@ -1,0 +1,130 @@
+@import "../node_modules/bootstrap/scss/functions"
+
+//$primary: #900
+$enable-shadows: true
+$prefix: "mo-"
+
+@import "../node_modules/bootstrap/scss/variables"
+@import "../node_modules/bootstrap/scss/maps"
+@import "../node_modules/bootstrap/scss/mixins"
+@import "../node_modules/bootstrap/scss/root"
+
+@import "../node_modules/bootstrap/scss/reboot"
+@import "../node_modules/bootstrap/scss/grid"
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap')
+:root
+    --swiper-theme-color: #e40000
+body
+    background: url("../assets/bg.jpg")
+    background-size: 18%
+a
+    transition: ease-in-out 0.2s
+    text-decoration: none
+    &:hover
+        color: #F80000
+
+li, .link-button
+    font-family: 'Raleway', sans-serif
+
+.container
+    width: 1170px
+    margin: auto
+header
+    min-width: 100vw
+    position: absolute
+    background: #F8F8F8
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+    position: relative
+    z-index: 5
+    .logo
+        float: left
+        height: 70px
+        margin: 15px 0
+    nav
+
+        margin: auto
+    .menu-col
+        display: flex
+    ul
+        margin-top: 0
+        margin-bottom: 0
+        width: fit-content
+        padding: 0
+        margin-left: auto
+        margin-right: auto
+        list-style-type: none
+        display: flex
+        font-size: 26px
+        line-height: 31px
+        gap: 25px
+    a
+        margin-top: auto
+        margin-bottom: auto
+        width: fit-content
+        height: fit-content
+        color: #000000b3
+    .link-button
+        font-size: 20px
+        line-height: 23px
+        background: linear-gradient(180deg, #EE0000 0%, rgba(242, 0, 58, 0.5) 100%)
+        box-shadow: 0px 0px 7px rgba(242, 0, 58, 0.25)
+        border-radius: 75px
+        color: white
+        padding: 11px 27px
+        border: none
+        margin-left: 7px
+    .header-buttons
+        display: flex
+        gap: 5px
+        margin: auto 0 auto auto
+        img
+            width: 40px
+
+.swiper
+    width: 100%
+    height: 75vh
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
+
+    &-slide
+        text-align: center
+        font-size: 18px
+        background: #fff
+        img
+            display: block
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .annot
+        top: 7%
+        left: 3%
+        border-radius: 3px
+        position: absolute
+        background: linear-gradient(180deg, #ffffffbd 0%, #ffffff80 100%)
+        padding: 10px 28px
+        -webkit-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.3)
+        -moz-box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.3)
+        box-shadow: 4px 4px 14px 0px rgba(34, 60, 80, 0.3)
+        backdrop-filter: blur(10px)
+        p
+            margin: 0
+            font-family: 'Raleway', sans-serif
+            font-size: 18pt
+            color: #222222
+    .callme
+        left: 50%
+        transform: translate(-50%)
+        bottom: 7%
+        font-size: 19px
+        padding: 10px 25px
+        z-index: 5
+        position: absolute
+        font-family: 'Raleway', sans-serif
+        color: #E7E7E7
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+        background: linear-gradient(97.69deg, #C10000 0%, #E90000 100%)
+        border-radius: 36px
+        border: none
+        i
+            color: #E7E7E7
+            padding-right: 7px
