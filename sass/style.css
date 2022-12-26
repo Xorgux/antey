@@ -1592,7 +1592,6 @@ li, .link-button {
 
 iframe {
   width: 100% !important;
-  max-height: 324px;
   border-radius: 5px;
 }
 
@@ -1735,6 +1734,9 @@ main p {
 main .cams {
   background: none;
 }
+main .cams iframe {
+  max-height: 324px;
+}
 main .cams a {
   display: flex;
   justify-content: center;
@@ -1787,10 +1789,60 @@ main .cards p {
   padding: 5px 20px;
 }
 main .contacts {
-  gap: 80px;
   display: flex;
+  flex-direction: column;
 }
 main .contacts p {
+  text-align: center;
   font-size: 18px;
   line-height: 30px;
+}
+
+footer {
+  padding: 25px 0;
+  background: linear-gradient(180deg, #2E2E2E 100%, #1E1E1E 100%);
+}
+footer .icons {
+  vertical-align: middle;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+}
+footer .icons .edicons {
+  font-size: 22px;
+}
+footer .icons .emicons {
+  font-size: 24px;
+}
+footer .icons a {
+  color: white;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .container .footer-tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .container .footer-tel a {
+  line-height: 25px;
+  color: white;
+}
+footer .container .footer-tel a:hover {
+  color: #F80000;
+}
+footer p {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding-top: 15px;
 }/*# sourceMappingURL=style.css.map */

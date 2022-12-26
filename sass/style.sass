@@ -43,7 +43,6 @@ li, .link-button
 
 iframe
     width: 100% !important
-    max-height: 324px
     border-radius: 5px
 
 hr
@@ -159,6 +158,8 @@ main
         text-align: justify
     .cams
         background: none
+        iframe
+            max-height: 324px
         a
             display: flex
             justify-content: center
@@ -170,6 +171,7 @@ main
             &:hover
                 color: #F80000
     .cards
+
         .card
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
             border-radius: 20px
@@ -206,8 +208,45 @@ main
             line-height: 150.69%
             padding: 5px 20px
     .contacts
-        gap: 80px
         display: flex
+        flex-direction: column
         p
+            text-align: center
             font-size: 18px
             line-height: 30px
+footer
+    padding: 25px 0
+    background: linear-gradient(180deg, #2E2E2E 100%, #1E1E1E 100%)
+    .icons
+        vertical-align: middle
+        display: flex
+        gap: 20px
+        font-size: 25px
+        .edicons
+            font-size: 22px
+        .emicons
+            font-size: 24px
+        a
+            color: white
+    .container
+        display: flex
+        justify-content: space-between
+        .footer-tel
+            font-family: 'Roboto'
+            font-style: normal
+            font-weight: 900
+            font-size: 16px
+            line-height: 19px
+            margin-left: auto
+            width: fit-content
+            a
+                line-height: 25px
+                color: white
+                &:hover
+                    color: #F80000
+    p
+        font-weight: 700
+        font-size: 14px
+        line-height: 16px
+        color: #FFFFFF
+        padding-top: 15px
