@@ -1570,6 +1570,7 @@ a:hover {
 }
 
 h2 {
+  color: #1f1f1f;
   text-align: center;
   font-weight: 700;
   font-size: 44px;
@@ -1577,8 +1578,26 @@ h2 {
   font-family: "Raleway", sans-serif;
 }
 
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 0.7098039216);
+  font-family: "Raleway", sans-serif;
+}
+
 li, .link-button {
   font-family: "Raleway", sans-serif;
+}
+
+iframe {
+  width: 100% !important;
+  max-height: 324px;
+  border-radius: 5px;
+}
+
+hr {
+  border-color: #808080;
 }
 
 .container {
@@ -1653,7 +1672,7 @@ header .header-buttons img {
 
 .swiper {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(87vh - 100px);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
 }
 .swiper-slide {
@@ -1708,11 +1727,70 @@ header .header-buttons img {
 main p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 21px;
   line-height: 150%;
   text-align: justify;
 }
 main .cams {
   background: none;
+}
+main .cams a {
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 250%;
+  color: #525252;
+}
+main .cams a:hover {
+  color: #F80000;
+}
+main .cards .card {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  margin-bottom: 35px;
+  background: #F8F8F8;
+}
+main .cards .card button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(180deg, rgba(204, 0, 0, 0.76) 0%, rgba(204, 0, 0, 0.67) 0.01%, rgba(163, 0, 78, 0.83) 100%);
+  box-shadow: 0px 0px 6px rgba(163, 0, 78, 0.5);
+  border-radius: 40px;
+  border: none;
+  color: white;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  padding: 8px 25px;
+}
+main .cards img {
+  border-radius: 20px;
+  width: 100%;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+}
+main .cards h3 {
+  margin-top: 15px;
+  text-align: center;
+}
+main .cards p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150.69%;
+  padding: 5px 20px;
+}
+main .contacts {
+  gap: 80px;
+  display: flex;
+}
+main .contacts p {
+  font-size: 18px;
+  line-height: 30px;
 }/*# sourceMappingURL=style.css.map */
