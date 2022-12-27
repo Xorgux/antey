@@ -20,6 +20,7 @@ $prefix: "mo-"
     Починить ссылки и кнопки
     Сделать меню
     Анимации у элементов
+    Ховеры
 
 :root
     --swiper-theme-color: #e40000
@@ -59,8 +60,8 @@ h2
     color: #1f1f1f
     text-align: center
     font-weight: 700
+    padding: 3vh
     font-size: 4.7vh
-    line-height: 15vh
     font-family: 'Raleway', sans-serif
 h3
     font-weight: 700
@@ -165,7 +166,6 @@ header
 
     &-slide
         text-align: center
-        font-size: 18px
         background: #fff
         img
             display: block
@@ -193,7 +193,7 @@ header
         left: 50%
         transform: translate(-50%)
         bottom: 7%
-        font-size: 19px
+        font-size: 2.8vh
         padding: 10px 25px
         z-index: 5
         position: absolute
@@ -204,6 +204,7 @@ header
         border-radius: 36px
         border: none
         i
+            font-size: 2.3vh
             color: #E7E7E7
             padding-right: 7px
     @include _768
@@ -214,29 +215,28 @@ header
             transform: translate(-50%, -50%)
             padding: 6px 19px
             // white-space: nowrap
-
             p
                 font-size: 20px
-
 main
     p
         font-family: 'Roboto', sans-serif
         font-style: normal
         font-weight: 400
-        font-size: 21px
-        line-height: 150%
+        font-size: 2.25vh
+        line-height: 175%
         text-align: justify
     .cams
         background: none
         iframe
             max-height: 324px
         a
+            padding: 25px 0 10px
             display: flex
+            text-align: center
             justify-content: center
             font-family: 'Roboto', sans-serif
-            font-size: 21px
+            font-size: 2.5vh
             font-weight: 500
-            line-height: 250%
             color: #525252
             &:hover
                 color: #F80000
@@ -259,7 +259,7 @@ main
                 font-family: 'Raleway'
                 font-style: normal
                 font-weight: 700
-                font-size: 20px
+                font-size: 2.4vh
                 line-height: 23px
                 padding: 8px 25px
 
@@ -270,7 +270,7 @@ main
             width: -moz-available
             width: fill-available
         h3
-            margin-top: 15px
+            margin-top: 20px
             text-align: center
         p
             font-weight: 400
@@ -281,8 +281,8 @@ main
         flex-direction: column
         p
             text-align: center
-            font-size: 18px
-            line-height: 30px
+            font-size: 2.1vh
+            line-height: 3.3vh
         iframe
             margin: 20px 0
 footer
@@ -292,12 +292,12 @@ footer
         justify-items: center
         vertical-align: middle
         display: flex
-        gap: 20px
-        font-size: 28px
+        gap: 2.2vh
+        font-size: 3vh
         .edicons
-            font-size: 23px
+            font-size: 2.8vh
         .emicons
-            font-size: 23px
+            font-size: 2.8vh
         a
             color: #d8d8d8
             &:hover
@@ -309,21 +309,20 @@ footer
             font-family: 'Roboto'
             font-style: normal
             font-weight: 900
-            font-size: 16px
-            line-height: 19px
+            font-size: 2.4vh
+            line-height: 3.5vh
             margin-left: auto
             width: fit-content
             a
-                font-size: 16px
+                font-size: 2.2vh
                 color: #d8d8d8
-                line-height: 25px
+                line-height: 3.5vh
                 color: white
                 &:hover
                     color: #F80000
     p
         font-weight: 700
-        font-size: 14px
-        line-height: 16px
+        font-size: 1.8vh
         color: #d8d8d8
         padding-top: 15px
         margin-bottom: 0

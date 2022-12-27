@@ -1612,8 +1612,8 @@ h2 {
   color: #1f1f1f;
   text-align: center;
   font-weight: 700;
+  padding: 3vh;
   font-size: 4.7vh;
-  line-height: 15vh;
   font-family: "Raleway", sans-serif;
 }
 
@@ -1753,7 +1753,6 @@ header .header-buttons img {
 }
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
   background: #fff;
 }
 .swiper-slide img {
@@ -1785,7 +1784,7 @@ header .header-buttons img {
   left: 50%;
   transform: translate(-50%);
   bottom: 7%;
-  font-size: 19px;
+  font-size: 2.8vh;
   padding: 10px 25px;
   z-index: 5;
   position: absolute;
@@ -1797,6 +1796,7 @@ header .header-buttons img {
   border: none;
 }
 .swiper .callme i {
+  font-size: 2.3vh;
   color: #E7E7E7;
   padding-right: 7px;
 }
@@ -1817,8 +1817,8 @@ main p {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 150%;
+  font-size: 2.25vh;
+  line-height: 175%;
   text-align: justify;
 }
 main .cams {
@@ -1828,12 +1828,13 @@ main .cams iframe {
   max-height: 324px;
 }
 main .cams a {
+  padding: 25px 0 10px;
   display: flex;
+  text-align: center;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-  font-size: 21px;
+  font-size: 2.5vh;
   font-weight: 500;
-  line-height: 250%;
   color: #525252;
 }
 main .cams a:hover {
@@ -1857,7 +1858,7 @@ main .cards .card button {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2.4vh;
   line-height: 23px;
   padding: 8px 25px;
 }
@@ -1869,7 +1870,7 @@ main .cards img {
   width: fill-available;
 }
 main .cards h3 {
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
 }
 main .cards p {
@@ -1883,8 +1884,8 @@ main .contacts {
 }
 main .contacts p {
   text-align: center;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 2.1vh;
+  line-height: 3.3vh;
 }
 main .contacts iframe {
   margin: 20px 0;
@@ -1898,14 +1899,14 @@ footer .icons {
   justify-items: center;
   vertical-align: middle;
   display: flex;
-  gap: 20px;
-  font-size: 28px;
+  gap: 2.2vh;
+  font-size: 3vh;
 }
 footer .icons .edicons {
-  font-size: 23px;
+  font-size: 2.8vh;
 }
 footer .icons .emicons {
-  font-size: 23px;
+  font-size: 2.8vh;
 }
 footer .icons a {
   color: #d8d8d8;
@@ -1921,17 +1922,17 @@ footer .container .footer-tel {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 2.4vh;
+  line-height: 3.5vh;
   margin-left: auto;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 footer .container .footer-tel a {
-  font-size: 16px;
+  font-size: 2.2vh;
   color: #d8d8d8;
-  line-height: 25px;
+  line-height: 3.5vh;
   color: white;
 }
 footer .container .footer-tel a:hover {
@@ -1939,8 +1940,7 @@ footer .container .footer-tel a:hover {
 }
 footer p {
   font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1.8vh;
   color: #d8d8d8;
   padding-top: 15px;
   margin-bottom: 0;
