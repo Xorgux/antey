@@ -12,5 +12,5 @@ var swiper = new Swiper(".my-swiper", {
 		onlyInViewport: false,
 	},
 	loop: true,
-	spaceBetween: 30,
+	spaceBetween: 10,
 });

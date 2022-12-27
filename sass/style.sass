@@ -1,5 +1,5 @@
 @import "../node_modules/bootstrap/scss/functions"
-
+@import "media_mixins.sass"
 //$primary: #900
 $enable-shadows: true
 $prefix: "mo-"
@@ -15,11 +15,41 @@ $prefix: "mo-"
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap')
 
+// TODO:
+    Размер текста и заголовков в адаптиве
+    Починить ссылки и кнопки
+    Сделать меню
+    Анимации у элементов
+
 :root
     --swiper-theme-color: #e40000
+
 body
     background: url("../assets/bg.jpg")
     background-size: 18%
+    @include _1366
+        .container
+            max-width: 1170px
+    @include _1170
+        .container
+            max-width: 1024px
+    @include _1024
+        .container
+            max-width: 979px
+    @include _979
+        .container
+            max-width: 768px
+    @include _768
+        .container
+            max-width: 600px
+    @include _600
+        .container
+            max-width: 480px
+    @include _480
+        .container
+            max-width: 350px
+body, section, main, header
+    overflow-x: hidden
 a
     transition: ease-in-out 0.2s
     text-decoration: none
@@ -29,13 +59,13 @@ h2
     color: #1f1f1f
     text-align: center
     font-weight: 700
-    font-size: 44px
-    line-height: 120px
+    font-size: 4.7vh
+    line-height: 15vh
     font-family: 'Raleway', sans-serif
 h3
     font-weight: 700
-    font-size: 24px
-    line-height: 28px
+    font-size: 2.8vh
+    line-height: 3vh
     color: #000000b5
     font-family: 'Raleway', sans-serif
 li, .link-button
@@ -48,8 +78,8 @@ iframe
 hr
     border-color: #808080
 .container
-    width: 1170px
     margin: auto
+    max-width: 1366px
 header
     min-width: 100%
     position: absolute
@@ -57,12 +87,13 @@ header
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15)
     position: relative
     z-index: 5
+    .menu
+        display: none
     .logo
         float: left
         height: 70px
         margin: 15px 0
     nav
-
         margin: auto
     .menu-col
         display: flex
@@ -75,9 +106,8 @@ header
         margin-right: auto
         list-style-type: none
         display: flex
-        font-size: 26px
-        line-height: 31px
-        gap: 25px
+        font-size: 2.7vh
+        gap: 2.3vh
     a
         margin-top: auto
         margin-bottom: auto
@@ -85,22 +115,49 @@ header
         height: fit-content
         color: #000000b3
     .link-button
-        font-size: 20px
-        line-height: 23px
+        font-size: 2.3vh
         background: linear-gradient(180deg, #EE0000 0%, rgba(242, 0, 58, 0.5) 100%)
         box-shadow: 0px 0px 7px rgba(242, 0, 58, 0.25)
         border-radius: 75px
         color: white
-        padding: 11px 27px
+        padding: 8px 27px
         border: none
         margin-left: 7px
     .header-buttons
+        white-space: nowrap
         display: flex
-        gap: 5px
+        gap: 1vh
         margin: auto 0 auto auto
+        @include _1024
+            .vk, .phone
+                display: none
         img
             width: 40px
-
+    @include _979
+        nav ul li
+            font-size: 17pt
+        .link-button
+            font-size: 14pt
+            padding: 8px 20px
+        .logo
+            height: 50px
+    @include _768
+        nav, .header-buttons
+            display: none
+        // .logo
+        //     margin-left: 20px
+        .menu
+            background: linear-gradient(135deg, rgba(238, 0, 0, 0.5) 0%, rgba(193, 0, 0, 0.83) 100%)
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 3px
+            display: flex
+            margin: auto 0 auto auto
+            height: 45px
+            width: 45px
+            i
+                margin: auto
+                color: white
+                font-size: 25px
 .swiper
     width: 100%
     height: calc(87vh - 100px)
@@ -132,6 +189,7 @@ header
             font-size: 18pt
             color: #222222
     .callme
+        white-space: nowrap
         left: 50%
         transform: translate(-50%)
         bottom: 7%
@@ -148,6 +206,18 @@ header
         i
             color: #E7E7E7
             padding-right: 7px
+    @include _768
+        .annot
+            border-radius: 7px
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            padding: 6px 19px
+            // white-space: nowrap
+
+            p
+                font-size: 20px
+
 main
     p
         font-family: 'Roboto', sans-serif
@@ -205,7 +275,6 @@ main
         p
             font-weight: 400
             font-size: 17px
-            line-height: 150.69%
             padding: 5px 20px
     .contacts
         display: flex
@@ -214,20 +283,25 @@ main
             text-align: center
             font-size: 18px
             line-height: 30px
+        iframe
+            margin: 20px 0
 footer
-    padding: 25px 0
+    padding: 35px 0
     background: linear-gradient(180deg, #2E2E2E 100%, #1E1E1E 100%)
     .icons
+        justify-items: center
         vertical-align: middle
         display: flex
         gap: 20px
-        font-size: 25px
+        font-size: 28px
         .edicons
-            font-size: 22px
+            font-size: 23px
         .emicons
-            font-size: 24px
+            font-size: 23px
         a
-            color: white
+            color: #d8d8d8
+            &:hover
+                color: white
     .container
         display: flex
         justify-content: space-between
@@ -240,6 +314,8 @@ footer
             margin-left: auto
             width: fit-content
             a
+                font-size: 16px
+                color: #d8d8d8
                 line-height: 25px
                 color: white
                 &:hover
@@ -248,5 +324,22 @@ footer
         font-weight: 700
         font-size: 14px
         line-height: 16px
-        color: #FFFFFF
+        color: #d8d8d8
         padding-top: 15px
+        margin-bottom: 0
+    @include _768
+        .container
+            flex-direction: column
+            .icons
+                margin-left: auto
+                margin-right: auto
+                width: fit-content
+            .footer-tel
+                margin-left: auto
+                margin-right: auto
+                margin-top: 15px
+                a
+                    line-height: 32px
+                    font-size: 20px
+        p
+            text-align: center
