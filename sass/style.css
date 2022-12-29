@@ -1644,12 +1644,13 @@ hr {
 }
 
 .btn-up {
-  transition: ease-in-out 0.6s;
+  z-index: 500;
+  transition: opacity 0.2s ease-in-out;
   border-radius: 100px;
   position: fixed;
-  background: linear-gradient(180deg, #EE0000 0%, rgba(242, 0, 58, 0.5) 100%);
+  background: linear-gradient(180deg, #EE0000 0%, #ff0000 100%);
   transform: scale(1.2);
-  left: 5%;
+  right: 5%;
   bottom: 5%;
 }
 .btn-up svg {
@@ -1658,7 +1659,7 @@ hr {
 }
 
 .btn-up_hide {
-  display: none;
+  opacity: 0;
 }
 
 header {
